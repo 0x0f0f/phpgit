@@ -141,6 +141,7 @@ class GitImpl
         return $this->run("clone --local $source ".$this->repo_path);
     }
 
+    // roll back to some tag
     public function rollback($tag)
     {
         return $this->run("checkout $tag");
